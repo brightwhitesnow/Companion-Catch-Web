@@ -1,120 +1,144 @@
 body {
-    background-color: #343a40; /* Dark background */
-    color: #f8f9fa; /* Light text */
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-  }
-  .hero-section {
-    background-image: #eceff1;
-    background-size: cover;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .content-section {
-    padding: 40px 0;
-    display: flex;
-    justify-content: space-around;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  .content-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .image-card {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .image-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-  .image-card:hover img {
-    transform: scale(1.1);
-  }
-  .image-card-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    opacity: 0;
-    display: flexbox;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: opacity 0.5s ease;
-    padding-top: 45%;
-    padding-bottom: 50%;
-  }
-  .image-card:hover .image-card-text {
-    opacity: 1;
-  }
-  
-  .footer {
-    background-color: #332d2d;
-    color: #fbfbfb;
-    padding: 20px 0;
-    text-align: center;
-    flex-shrink: 0;
-  }
-  .footer a {
-    color: #fbfbfb;
-    flex-shrink: 0;
-  }
-  .content {
-    flex: 1 0 auto;
-  }
-  html,
-  body {
-    height: 100%;
-  }      .navbar-custom {
-    background-color: #332d2d; /* Dark background for the navbar */
+  background-color: #343a40;
+  /* Dark background */
+  color: #f8f9fa;
+  /* Light text */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  background-image: #eceff1;
+  background-size: cover;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content-section {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.content-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image-card {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.image-card:hover img {
+  transform: scale(1.1);
+}
+
+.image-card-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.5s ease;
+  padding-top: 45%;
+  padding-bottom: 50%;
+}
+
+.image-card:hover .image-card-text {
+  opacity: 1;
+}
+
+.footer {
+  background-color: #332d2d;
+  color: #fbfbfb;
+  padding: 20px 0;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.footer a {
+  color: #fbfbfb;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.navbar-custom {
+  background-color: #332d2d;
+  /* Dark background for the navbar */
 }
 
 .nav-pills .nav-link {
-    border-radius: 0.25rem; /* Pill shape */
-    color: #332d2d; /* Black text color */
+  border-radius: 0.25rem;
+  /* Pill shape */
+  color: #332d2d;
+  /* Black text color */
 }
 
 .nav-link active {
-    background-color: #FBFBFB; /* White background for active/hover state */
-    color: #332d2d; /* Black text color for active/hover state */
+  background-color: #fbfbfb;
+  /* White background for active/hover state */
+  color: #332d2d;
+  /* Black text color for active/hover state */
 }
+
 video {
   width: 60vw;
   height: 70vh;
 }
+
 .video-container {
-    width: 60vw;
-    height: 70vh;
-    border-radius: 100%;
-    overflow: hidden;
-    object-fit: cover !important;
-    border-radius: 10px !important;
+  width: 60vw;
+  height: 70vh;
+  border-radius: 100%;
+  overflow: hidden;
+  object-fit: cover !important;
+  border-radius: 10px !important;
 }
+
 #myVideo {
-    border-radius: 50px;
-    object-fit: cover !important;
-    border-radius: 10px !important;
+  border-radius: 50px;
+  object-fit: cover !important;
+  border-radius: 10px !important;
 }
+
 #myVideotwo {
-    border-radius: 50px;
-    object-fit: cover !important;
-    border-radius: 10px !important;
+  border-radius: 50px;
+  object-fit: cover !important;
+  border-radius: 10px !important;
 }

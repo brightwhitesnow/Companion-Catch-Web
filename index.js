@@ -70,3 +70,10 @@ videotwo.addEventListener('ended', function() {
     this.play(); // Play the video again
 });
 });
+
+window.onload = function() {
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+        window.location.href = 'https://calvinbun.github.io/Companion-Catch-Web/conly.html';
+    }
+};

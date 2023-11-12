@@ -1,0 +1,37 @@
+
+      body {
+        background-color: #343a40; /* Dark background */
+        color: #fbfbfb; /* Light text */
+        display: flex;
+        flex-direction: column;
+      }
+      .navbar-custom {
+        background-color: #332d2d; /* Same as the footer */
+      }
+      .contact-form {
+        padding: 40px 0;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        background-color: #495057;
+        color: #fbfbfb;
+        margin-bottom: 15px;
+      }
+      .footer {
+        background-color: #332d2d;
+        color: #fbfbfb;
+        padding: 20px 0;
+        text-align: center;
+        flex-shrink: 0;
+      }
+      .footer a {
+        color: #fbfbfb;
+        flex-shrink: 0;
+      }
+      .content {
+        flex: 1 0 auto;
+      }
+      html,
+      body {
+        height: 100%;
+      }

@@ -5,67 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Companion Catch</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
     />
     <link rel="icon" type="image/x-icon" href="CompanionCatchLogo.png" />
+    <link rel="stylesheet" href="index.css">
+    
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#">CompanionCatch</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="CompanionCatchLogo.png"
-            alt="Logo"
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          Companion Catch
-        </a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link active" style="color: #332d2d;" aria-current="page" href="index.html"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #FBFBFB;" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #FBFBFB;" href="demo.html">Demo</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div style="padding: 50px">
-      <div class="card">
-        <div class="card-body" style="text-align: center">
-          <h3>What is Companion Catch?</h3>
-          <p>Insert text here</p>
+    <div class="content">
+    <!-- Header with Custom Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="height: 60px;">
+      <div class="container">
+        <a href="index.html"><img src="CompanionCatchLogo.png" alt="logo" style="width: 30px;"></a>
+        <a class="navbar-brand" href="index.html" style="padding-left: 10px;">Companion Catch</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" style="background-color: #FBFBFB; color: #332d2d;" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="demo.html">Demo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h4 style="padding: 30px;">Companion Catch, is designed to recognize and track falls as they happen using AI technology. If a fall is identified, an alert is sent without delay to a designated computer, ensuring timely assistance. Inspired by personal experiences and driven by the goal to provide an invisible companion to those in need, the app combines advanced computer vision techniques with a deep learning model to offer both safety and peace of mind to users and their loved ones.</h4>
     </div>
-    <style>
-      .formdiv {
-        padding: 50px;
-      }
-      .nav-pills .nav-link.active {
-        background-color: #fbfbfb;
-        color: #332d2d;
-      }
-    </style>
+    
+    <!-- Image Cards with Scroll Animation -->
+    <div class="container">
+      <div class="content-section">
+        <div id="video-container">
+          <video id="myVideo" width="320" height="240" preload="metadata" muted>
+            <!--Step one: put all videos and images into this folder-->
+            <!--Step two: erase funnydog.mp4 below-->
+            <!--Step three: type in video name in src attribute like this -> src="example.mp4"-->
+              <source src="funnydog.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+      
+  
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="content-section">
+        <div class="image-card">
+          <!--Step one: Note that this card below is for Data Privacy and Consent so put an image relating to that.-->
+          <!--Step two: erase https://via.placeholder.com/300x200 below-->
+            <!--Step three: type in video name in src attribute like this -> src="example.jpeg"-->
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Featured Product"
+          />
+          <div class="image-card-text">For more information about this image,<br> go to the <a href="datapac.html">Data Privacy and Consent Page</a>.</div>
+        </div>
+        <div class="image-card">
+          <!--Step one: Note that this card below is for Inspriation so put an image relating to that.-->
+          <!--Step two: erase https://via.placeholder.com/300x200 below-->
+            <!--Step three: type in video name in src attribute like this -> src="example.jpeg"-->
+          <img src="https://via.placeholder.com/300x200" alt="About Us" />
+          <div class="image-card-text">
+            For more information about this image,<p>&nbspgo to the<a href="inspiration.html">&nbspInspiration Page</a>.</p></div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="container">
+      <div class="content-section">
+        <div id="video-container">
+          <video id="myVideotwo" width="320" height="240" preload="metadata" muted>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+              <!--Step two: erase funnydog.mp4 below-->
+            <!--Step three: type in video name in src attribute like this -> src="example.mp4"-->
+              <source src="funnydog.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+        
+      </div>
+    </div>
+    <div class="container">
+      <div class="content-section">
+        <div class="image-card">
+          <!--Step one: Note that this card below is for How does it work so put an image relating to that.-->
+          <!--Step two: erase https://via.placeholder.com/300x200 below-->
+            <!--Step three: type in video name in src attribute like this -> src="example.jpeg"-->
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Featured Product"
+          />
+          <div class="image-card-text">For more information about this image, go to the <a href="hdiw.html">How Does Companion Catch Work? Page</a>.</div>
+        </div>
+        <div class="image-card">
+          <!--Step one: Note that this card below is for the angles taken with iphones and gopros so put an image relating to that.-->
+          <!--Step two: erase https://via.placeholder.com/300x200 below-->
+            <!--Step three: type in video name in src attribute like this -> src="example.jpeg"-->
+          <img src="https://via.placeholder.com/300x200" alt="About Us" />
+          <div class="image-card-text">The Companion Catch dataset includes 400+ videos of my family and friends falling. The videos are taken in 8 different angles using iPhones and GoPros.</div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        &copy; 2023 Companion Catch. All rights reserved.
+        <br />
+        <a href="datapac.html">Data Privacy and Consent</a> | <a href="userg.html">User Guidelines</a> | <a href="hdiw.html">How does Companion Catch Work?</a> | <a href="inspiration.html">Inspiration</a>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    <script src="index.js"></script>
   </body>
 </html>

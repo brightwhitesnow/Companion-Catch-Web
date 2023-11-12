@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   }
   .hero-section {
     background-image: #eceff1;
@@ -96,13 +97,13 @@ body {
     color: #332d2d; /* Black text color for active/hover state */
 }
 video {
-  width: 1200px;
-  height: 800px;
+  width: 60vw;
+  height: 70vh;
 }
 .video-container {
-    width: 1200px;
-    height: 800px;
-    border-radius: 50px;
+    width: 60vw;
+    height: 70vh;
+    border-radius: 100%;
     overflow: hidden;
     object-fit: cover !important;
     border-radius: 10px !important;

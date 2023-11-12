@@ -10,7 +10,14 @@
     />
     <link rel="icon" type="image/x-icon" href="CompanionCatchLogo.png" />
     <link rel="stylesheet" href="index.css">
-    
+    <script>
+    window.onload = function() {
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+          window.location.href = 'https://calvinbun.github.io/Companion-Catch-Web/conly.html';
+      }
+  };
+  </script>
   </head>
   <body>
     <div class="content">

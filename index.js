@@ -1,20 +1,43 @@
-function reveal() {
-    var reveals = document.querySelectorAll(".content-section");
+// function reveal() {
+//     var reveals = document.querySelectorAll(".col-sm-5 mb-3 mb-sm-0 col-sm-7 col-sm-6");
 
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
+//     for (var i = 0; i < reveals.length; i++) {
+//         var windowHeight = window.innerHeight;
+//         var elementTop = reveals[i].getBoundingClientRect().top;
+//         var elementVisible = 150;
 
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("visible");
-        } else {
-            reveals[i].classList.remove("visible");
-        }
-    }
-}
+//         if (elementTop < windowHeight - elementVisible) {
+//             reveals[i].classList.add("visible");
+//         } else {
+//             reveals[i].classList.remove("visible");
+//         }
+//     }
+// }
 
-window.addEventListener("scroll", reveal);
+// window.addEventListener("scroll", reveal);
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, {
+        threshold: 0.1 // Adjust if needed
+    });
+
+    const elements = document.querySelectorAll('.slide-in');
+    elements.forEach(el => observer.observe(el));
+});
+
+
+
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
